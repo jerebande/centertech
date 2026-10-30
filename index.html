@@ -168,6 +168,9 @@
     .pill:active,.choice-tab:active,.distance-button:active,.phone-control:active{transform:scale(.96)}
     @media(max-width:800px){:is(.service,.chooser,.trust-panel,.location-info,.cta-box).tilt-active{transform:translateY(-2px)}}
     @media(prefers-reduced-motion:reduce){:is(.service,.chooser,.trust-panel,.location-info,.cta-box){will-change:auto}:is(.service,.chooser,.trust-panel,.location-info,.cta-box).tilt-active{transform:none}}
+    /* Keep the mobile layout centered when the browser viewport or zoom changes. */
+    @media(max-width:800px){.hero{min-width:0;width:100%;grid-template-columns:minmax(0,1fr)}.hero-copy,.stage{min-width:0;width:100%}.stage{margin-inline:0;justify-self:stretch;overflow:hidden}.orbit{max-width:calc(100vw - 40px);max-height:calc(100vw - 40px)}.phone-ux-controls{max-width:calc(100vw - 28px);flex-wrap:wrap}}
+    @media(max-width:560px){html,body{width:100%;max-width:100%;overflow-x:hidden}.wrap{width:calc(100% - 32px);max-width:460px;margin-inline:auto}.hero{padding:38px 0 46px;justify-items:stretch}.stage{height:490px;margin:8px 0 0;overflow:hidden;contain:paint}.orbit{width:min(330px,calc(100vw - 40px));height:auto;aspect-ratio:1}.phone{max-width:calc(100vw - 118px)}.phone-ux-controls{left:50%;width:max-content;max-width:calc(100vw - 24px);justify-content:center;gap:5px}.phone-control{min-width:64px;padding-inline:7px}.float-card.one{left:max(0px,calc(50% - 180px))}.float-card.two{right:max(0px,calc(50% - 180px))}}
   </style>
 </head>
 <body>
